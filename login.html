@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="aset/img/Udakost/transparent-udakost/Vertical-Uda Kost Logo.png">
+    <title>Log in</title>
+
+    <link href="bootstrap-5/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<body>
+    
+    <section class="section bg-light min-vh-100 d-flex align-items-center justify-content-center">
+        <div class="container d-flex align-items-center justify-content-center">
+            <div class="row w-100 mx-0">
+                <div class="col-lg-5 mx-auto">
+
+                    <div class="card card-rounded border-0 shadow">
+                        <div class="card-body p-5">
+                            <div class="d-flex justify-content-center mb-4">
+                                <img src="aset/img/Udakost/transparent-udakost/Uda Kost Logo.png" alt="Udakost Logo"
+                                    width="100%" class="w-36">
+                            </div>
+
+                            <!-- <p class="text-center text-gray-600 mb-4">
+                Don't have an account? 
+                <a href="/register" class="text-muted font-semibold hover:underline">Sign up</a>
+              </p> -->
+
+                            <form method="POST" action="">
+                                <label for="email"
+                                    class="form-label text-gray-700 font-medium">Email</label>
+                                <div class="mb-4">
+                                    <input type="email"
+                                        class="form-control form-control-user shadow-sm  @error('email') is-invalid @enderror"
+                                        name="email" placeholder="Email"
+                                        required autocomplete="email" autofocus>
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>Email Invalid*</strong>
+                                        </span>
+                                </div>
+
+                                <label for="password"
+                                    class="form-label text-gray-700 font-medium">Kata sandi</label>
+                                <div class="mb-4 relative">
+                                    <input type="password"
+                                        class="form-control form-control-user shadow-sm @error('password') is-invalid @enderror"
+                                        name="password" placeholder="Kata sandi" required
+                                        autocomplete="current-password">
+                                    <div class="text-end mt-2">
+                                        <a href="" class="text-muted text-blue-600 hover:underline">Lupa Kata sandi?</a>
+                                    </div>
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>Kata sandi Invalid*</strong>
+                                        </span>
+                                </div>
+
+                                <div class="d-grid gap-2 py-2">
+                                    <button type="submit"
+                                        class="btn btn-primary w-full py-2 rounded-md font-semibold hover:bg-blue-200 focus:outline-none transition">
+                                        Masuk
+                                    </button>
+                                </div>
+
+                                <!-- Divider with Or -->
+                                <!-- <div class="d-flex items-center my-2">
+                  <hr class="flex-grow-1 border-gray-250">
+                  <span class="px-3 text-gray-500 text-sm">Or sign in with</span>
+                  <hr class="flex-grow-1 border-gray-250">
+                </div> -->
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="bootstrap-5/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
